@@ -1,0 +1,172 @@
+﻿/*
+    Restructured Swagger UI Theme: "Futuristic Cards"
+    Goal: A complete visual overhaul for a unique, modern, and card-based interface.
+*/
+
+/* --- Global & Font Styles --- */
+body {
+    background-color: #0d1117; /* GitHub Dark Mode background */
+    color: #c9d1d9; /* Softer off-white text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Top Header Bar --- */
+.swagger-ui .topbar {
+    background: linear-gradient(90deg, #c030ff, #f038ff); /* Vibrant magenta gradient */
+    padding: 12px 0;
+    box-shadow: 0 4px 15px rgba(200, 50, 255, 0.2);
+    border-bottom: none;
+}
+
+    .swagger-ui .topbar .link {
+        display: none; /* Hide the default link */
+    }
+
+    .swagger-ui .topbar .download-url-wrapper {
+        display: none; /* Hide the URL box for a cleaner look */
+    }
+
+/* --- Main Page Title --- */
+.swagger-ui .info {
+    margin: 40px 20px;
+}
+
+    .swagger-ui .info .title {
+        color: #ffffff;
+        font-size: 36px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+        .swagger-ui .info .title span {
+            font-weight: 300;
+        }
+
+        .swagger-ui .info .title small.version-stamp {
+            background-color: #c9d1d9;
+            color: #0d1117;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px 10px;
+            border-radius: 20px; /* Pill shape */
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+/* --- Endpoint Card Restructuring --- */
+.swagger-ui .opblock-tag-section {
+    padding: 0 20px; /* Add padding to the container */
+}
+
+.swagger-ui h3.opblock-tag {
+    font-size: 24px;
+    color: #f038ff; /* Use accent color for section headers */
+    border-bottom: 2px solid #30363d; /* Separator line */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.swagger-ui .opblock {
+    background-color: #161b22; /* Darker card background */
+    border: 1px solid #30363d; /* Subtle border */
+    border-radius: 8px; /* More defined rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 0 25px 0;
+    transition: all 0.2s ease-in-out;
+}
+
+    .swagger-ui .opblock:hover {
+        border-color: #f038ff; /* Highlight with accent color on hover */
+        transform: translateY(-4px);
+        box-shadow: 0 8px 25px rgba(240, 56, 255, 0.15);
+    }
+
+.swagger-ui .opblock-summary {
+    border-color: #30363d;
+    padding: 10px 15px;
+}
+
+.swagger-ui .opblock-summary-method {
+    min-width: 80px; /* Give the method tag a fixed width */
+    text-align: center;
+    border-radius: 20px; /* Pill shape */
+    text-shadow: none;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Custom colors for the method tags */
+.swagger-ui .opblock.opblock-get .opblock-summary-method {
+    background: #28a745;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-summary-method {
+    background: #007bff;
+}
+
+.swagger-ui .opblock.opblock-put .opblock-summary-method {
+    background: #ffc107;
+    color: #111;
+}
+
+.swagger-ui .opblock.opblock-delete .opblock-summary-method {
+    background: #dc3545;
+}
+
+.swagger-ui .opblock-summary-path {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace; /* Use a monospaced font for paths */
+    font-size: 16px;
+    color: #8b949e;
+    margin-left: 15px;
+}
+
+    .swagger-ui .opblock-summary-path span {
+        font-weight: 600;
+        color: #c9d1d9; /* Main part of path is brighter */
+    }
+
+/* --- Expanded Section & Buttons --- */
+.swagger-ui .opblock .opblock-body {
+    padding: 20px;
+}
+
+.swagger-ui .opblock-body .btn.execute {
+    background: linear-gradient(90deg, #c030ff, #f038ff);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px 24px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(200, 50, 255, 0.2);
+}
+
+    .swagger-ui .opblock-body .btn.execute:hover {
+        filter: brightness(1.2);
+    }
+
+/* --- Response Section Styling --- */
+.swagger-ui .responses-inner h5 {
+    color: #c9d1d9;
+    font-size: 16px;
+}
+
+.swagger-ui .response-col_status {
+    color: #58a6ff;
+    font-size: 16px;
+}
+
+.swagger-ui .responses-table .highlight-code .microlight {
+    background: #0d1117; /* Match main background */
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+.swagger-ui code {
+    color: #79c0ff;
+}
+
+.swagger-ui .response-control-media-type__accept-message {
+    display: none;
+}
